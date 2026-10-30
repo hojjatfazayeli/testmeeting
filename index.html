@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>نام شما | مهندس کامپیوتر و توسعه‌دهنده نرم‌افزار</title>
+<meta name="description" content="وب‌سایت شخصی نام شما، مهندس کامپیوتر. معرفی تخصص‌ها و نمونه‌کارهای برنامه‌نویسی.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a1330;--panel:#14204a;--line:#25356a;--ink:#eaeefb;--muted:#9eabd2;--accent:#f5b94a;--accent-ink:#0a1330}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Vazirmatn",Tahoma,sans-serif;line-height:1.9;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+
+header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;text-decoration:none}
+nav{display:flex;gap:22px}
+nav a{text-decoration:none;color:var(--muted);font-size:15px}
+nav a:hover{color:var(--ink)}
+@media(max-width:620px){nav{display:none}}
+
+.hero{padding:96px 0 72px}
+.hero h1{font-weight:900;font-size:clamp(2.6rem,9vw,5.6rem);line-height:1.15}
+.hero h1 span{display:block;color:var(--accent);font-weight:300}
+.hero p{max-width:34em;margin-top:28px;color:var(--muted);font-size:1.1rem}
+.cta{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600;border:1px solid var(--muted)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{opacity:.88}
+
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font-size:1.9rem;font-weight:800;margin-bottom:32px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.about p{color:var(--muted)}
+.facts{list-style:none}
+.facts li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--line)}
+.facts span{color:var(--muted)}
+@media(max-width:700px){.about{grid-template-columns:1fr;gap:28px}}
+
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px}
+.skills h3{font-size:1rem;font-weight:600;margin-bottom:10px;color:var(--accent)}
+.skills ul{list-style:none;color:var(--muted)}
+
+.projects{list-style:none}
+.project{display:grid;grid-template-columns:1fr auto;gap:8px 32px;padding:28px 0;border-bottom:1px solid var(--line)}
+.project:first-child{border-top:1px solid var(--line)}
+.project h3{font-size:1.35rem;font-weight:800}
+.project p{color:var(--muted)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.tags span{font-size:13px;background:var(--panel);padding:0 12px;border-radius:99px;direction:ltr}
+.links{grid-column:2;grid-row:1 / span 3;display:flex;flex-direction:column;gap:6px;align-items:flex-end;justify-content:center}
+.links a{color:var(--accent);font-weight:600;text-decoration:none}
+.links a:hover{text-decoration:underline}
+@media(max-width:600px){
+  .project{grid-template-columns:1fr}
+  .links{grid-column:1;grid-row:auto;flex-direction:row;gap:20px;margin-top:8px}
+}
+
+.contact p{color:var(--muted);max-width:32em;margin-bottom:24px}
+.contact-list{display:flex;gap:14px;flex-wrap:wrap}
+footer{padding:32px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">نام شما</a>
+    <nav aria-label="منوی اصلی">
+      <a href="#about">درباره من</a>
+      <a href="#skills">مهارت‌ها</a>
+      <a href="#projects">نمونه‌کارها</a>
+      <a href="#contact">ارتباط</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <h1>مهندس کامپیوتر<span>و توسعه‌دهنده نرم‌افزار</span></h1>
+    <!-- ✏️ متن معرفی -->
+    <p>من نرم‌افزارهایی می‌سازم که ساده کار می‌کنند و بتوان آن‌ها را نگهداری کرد. در این صفحه تخصص‌هایم و پروژه‌هایی را که تا امروز توسعه داده‌ام می‌بینید.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">دیدن نمونه‌کارها</a>
+      <a class="btn" href="#contact">ارتباط با من</a>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <h2>درباره من</h2>
+        <!-- ✏️ -->
+        <p>مهندس کامپیوتر با تجربه در توسعه وب و نرم‌افزار. به معماری تمیز، تست‌پذیری و تجربه کاربری خوب اهمیت می‌دهم. اینجا چند جمله درباره مسیر کاری و علاقه‌های خود بنویسید.</p>
+      </div>
+      <ul class="facts">
+        <!-- ✏️ -->
+        <li><b>تحصیلات</b><span>کارشناسی مهندسی کامپیوتر</span></li>
+        <li><b>سابقه کار</b><span>۵ سال</span></li>
+        <li><b>موقعیت</b><span>تهران، ایران</span></li>
+        <li><b>وضعیت</b><span>آماده همکاری پروژه‌ای</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>مهارت‌ها</h2>
+      <div class="skills" id="skills-list"></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>نمونه‌کارها</h2>
+      <ul class="projects" id="projects-list"></ul>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>ارتباط با من</h2>
+      <p>برای همکاری یا گفتگو درباره یک پروژه، از یکی از راه‌های زیر پیام بدهید.</p>
+      <div class="contact-list">
+        <!-- ✏️ لینک‌ها -->
+        <a class="btn primary" href="mailto:you@example.com">ایمیل</a>
+        <a class="btn" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">گیت‌هاب</a>
+        <a class="btn" href="https://linkedin.com/in/YOUR-USERNAME" target="_blank" rel="noopener">لینکدین</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year"></span> نام شما. همه حقوق محفوظ است.</div>
+</footer>
+
+<script>
+/* ✏️ مهارت‌ها و نمونه‌کارها را فقط در این بخش ویرایش کنید */
+const skills = [
+  { title: "زبان‌های برنامه‌نویسی", items: ["Python", "JavaScript / TypeScript", "C++", "Java"] },
+  { title: "وب و بک‌اند", items: ["React", "Node.js", "Django", "REST و GraphQL"] },
+  { title: "داده و زیرساخت", items: ["PostgreSQL", "MongoDB", "Docker", "Git و CI/CD"] }
+];
+
+const projects = [
+  {
+    name: "نام پروژه اول",
+    desc: "توضیح کوتاه درباره مسئله‌ای که پروژه حل می‌کند و نقش شما در آن.",
+    tags: ["React", "Node.js", "PostgreSQL"],
+    demo: "https://example.com",
+    code: "https://github.com/YOUR-USERNAME/project-one"
+  },
+  {
+    name: "نام پروژه دوم",
+    desc: "توضیح کوتاه درباره پروژه و نتیجه‌ای که گرفتید.",
+    tags: ["Python", "Django", "Docker"],
+    demo: "",
+    code: "https://github.com/YOUR-USERNAME/project-two"
+  },
+  {
+    name: "نام پروژه سوم",
+    desc: "توضیح کوتاه درباره پروژه و فناوری‌های مهم آن.",
+    tags: ["TypeScript", "MongoDB"],
+    demo: "https://example.com",
+    code: "https://github.com/YOUR-USERNAME/project-three"
+  }
+];
+
+const el = (tag, props = {}, kids = []) => {
+  const n = Object.assign(document.createElement(tag), props);
+  kids.forEach(k => n.append(k));
+  return n;
+};
+
+document.getElementById("skills-list").append(
+  ...skills.map(s => el("div", {}, [
+    el("h3", { textContent: s.title }),
+    el("ul", {}, s.items.map(i => el("li", { textContent: i })))
+  ]))
+);
+
+document.getElementById("projects-list").append(
+  ...projects.map(p => {
+    const links = el("div", { className: "links" });
+    if (p.demo) links.append(el("a", { href: p.demo, textContent: "نمونه زنده", target: "_blank", rel: "noopener" }));
+    if (p.code) links.append(el("a", { href: p.code, textContent: "کد منبع", target: "_blank", rel: "noopener" }));
+    return el("li", { className: "project" }, [
+      el("h3", { textContent: p.name }),
+      el("p", { textContent: p.desc }),
+      el("div", { className: "tags" }, p.tags.map(t => el("span", { textContent: t }))),
+      links
+    ]);
+  })
+);
+
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
